@@ -1,0 +1,31 @@
+{
+  "name": "nushell-lsp-server",
+  "description": "Implementation of the nushell language server in node.",
+  "author": "Nushell Maintainers",
+  "license": "MIT",
+  "version": "1.2.0",
+  "publisher": "TheNuProjectContributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nushell/vscode-nushell-lang"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.67.0",
+    "tmp": "^0.2.1",
+    "vscode-languageserver": "^8.1.0",
+    "vscode-languageserver-textdocument": "^1.0.8",
+    "vscode-uri": "^3.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.7.2",
+    "@types/tmp": "^0.2.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  }
+}
