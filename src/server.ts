@@ -49,7 +49,7 @@ const tmpFile = tmp.fileSync({ prefix: "nushell", keep: false });
 
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
-const connection = createConnection(ProposedFeatures.all, process.stdin, process.stdout);
+const connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager.
 const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
